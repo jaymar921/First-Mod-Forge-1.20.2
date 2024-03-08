@@ -1,6 +1,7 @@
 package net.jaymar.firstmod;
 
 import com.mojang.logging.LogUtils;
+import net.jaymar.firstmod.blocks.ModBlocks;
 import net.jaymar.firstmod.item.ModCreativeModeTabs;
 import net.jaymar.firstmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -33,6 +34,8 @@ public class JaymarMod
         ModCreativeModeTabs.register(modEventBus);
         // Register our items
         ModItems.register(modEventBus);
+        // Register our blocks
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

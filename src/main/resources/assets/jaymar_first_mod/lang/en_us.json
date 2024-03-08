@@ -2,5 +2,9 @@
   "item.jaymar_first_mod.sapphire": "Sapphire",
   "item.jaymar_first_mod.ruby": "Ruby",
   "item.jaymar_first_mod.bitcoin": "$1 bitcoin",
+
+  "block.jaymar_first_mod.sapphire_block": "Block of Sapphire",
+  "block.jaymar_first_mod.mystery_block": "Mystery Block",
+
   "creativetab.jaymar_mod_tab": "Jaymar Forge Mod - Testing"
 }

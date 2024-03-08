@@ -1,6 +1,7 @@
 package net.jaymar.firstmod.item;
 
 import net.jaymar.firstmod.JaymarMod;
+import net.jaymar.firstmod.blocks.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -25,6 +26,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BITCOIN.get());
                         // adding vanilla items, no need get() method
                         output.accept(Items.CRAFTING_TABLE);
+
+                        // register our block
+                        output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                        output.accept(ModBlocks.MYSTERY_BLOCK.get());
                     })
                     .build());
     public static void register(IEventBus eventBus){
