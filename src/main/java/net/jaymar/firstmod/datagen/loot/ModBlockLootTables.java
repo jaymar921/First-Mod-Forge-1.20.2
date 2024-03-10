@@ -29,11 +29,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.SAPPHIRE_BLOCK.get());
-        this.dropSelf(ModBlocks.MYSTERY_BLOCK.get());
         this.dropSelf(ModBlocks.SOUND_BLOCK.get());
 
         this.add(ModBlocks.SAPPHIRE_ORE.get(), block -> createCustomDrop(ModBlocks.SAPPHIRE_ORE.get(), ModItems.SAPPHIRE.get(), UniformGenerator.between(2.0f, 3.0f)));
-        createMultipleDrops(ModBlocks.SAPPHIRE_ORE.get(),
+        createMultipleDrops(ModBlocks.MYSTERY_BLOCK.get(),
             List.of(
                     ModItems.SAPPHIRE.get(),
                     ModItems.BITCOIN.get(),
@@ -41,6 +40,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                     ModItems.METAL_DETECTOR.get()
         ), UniformGenerator.between(1.0f, 1.0f));
 
+        this.dropSelf(ModBlocks.SAPPHIRE_STAIRS.get());
+        this.dropSelf(ModBlocks.SAPPHIRE_BUTTON.get());
+        this.dropSelf(ModBlocks.SAPPHIRE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.SAPPHIRE_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.SAPPHIRE_FENCE.get());
+        this.dropSelf(ModBlocks.SAPPHIRE_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.SAPPHIRE_WALL.get());
+
+        this.add(ModBlocks.SAPPHIRE_SLAB.get(), block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
+        this.add(ModBlocks.SAPPHIRE_DOOR.get(), block -> createDoorTable(ModBlocks.SAPPHIRE_DOOR.get()));
     }
 
     protected LootTable.Builder createCustomDrop(Block pBlock, Item item, UniformGenerator uniformGenerator) {

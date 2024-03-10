@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "jaymar_first_mod:block/sapphire_pressure_plate"
+    },
+    "powered=true": {
+      "model": "jaymar_first_mod:block/sapphire_pressure_plate_down"
+    }
+  }
+}

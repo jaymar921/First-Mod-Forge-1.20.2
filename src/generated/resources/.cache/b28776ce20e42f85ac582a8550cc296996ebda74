@@ -1,4 +1,5 @@
-// 1.20.2	2024-03-10T15:58:28.4462281	Item Models: jaymar_first_mod
+// 1.20.2	2024-03-10T20:17:21.8699991	Item Models: jaymar_first_mod
+9785a80413fdca792b7fe53fce11c5a413054bd5 assets/jaymar_first_mod/models/item/bitcoin.json
 40c04e501c024d20c4fd52630350c45b823468fe assets/jaymar_first_mod/models/item/burger.json
 87131c89ddf131485cc348fd5db6a65644aa63f7 assets/jaymar_first_mod/models/item/cheese.json
 4a87dce52cc79a515d9850906c17093d805e4ebf assets/jaymar_first_mod/models/item/chopped_onion.json
@@ -10,3 +11,12 @@ f5836514aded95f32bfc87067d6cda3a50d8cab1 assets/jaymar_first_mod/models/item/raw
 e4352f10e2a0a4553b57fc10f2c1ab346b8c36c3 assets/jaymar_first_mod/models/item/raw_onion.json
 acb29fe2a4adb99aa8d0745701e37a366f887e25 assets/jaymar_first_mod/models/item/ruby.json
 dabad55b1e780d6f70b32749a1e5d8adbc51ef33 assets/jaymar_first_mod/models/item/sapphire.json
+710613f80097e2a852dd8769c647a467ec098b50 assets/jaymar_first_mod/models/item/sapphire_button.json
+e104f4632a83352b75e010ee30d10eaef06078d0 assets/jaymar_first_mod/models/item/sapphire_door.json
+e33a44afbe32f7d7a4357effcccfdb22f99f511c assets/jaymar_first_mod/models/item/sapphire_fence.json
+eef096335a938dbab04a525364ed9069ab216625 assets/jaymar_first_mod/models/item/sapphire_fence_gate.json
+69fe293b0e3d40c3f58ec7309721616ce8b9e199 assets/jaymar_first_mod/models/item/sapphire_pressure_plate.json
+ce72a3ce1b569e16e89fb91bebf9637b395c9537 assets/jaymar_first_mod/models/item/sapphire_slab.json
+c3d2bb498d74de628733ff45680d69e8539601f3 assets/jaymar_first_mod/models/item/sapphire_stairs.json
+7fd7ee8c3d5ec5494d9e562287ab1c6c4d2c2b66 assets/jaymar_first_mod/models/item/sapphire_trapdoor.json
+ebc1dcc39b79a89d9db40c173f97eeec4f0084b9 assets/jaymar_first_mod/models/item/sapphire_wall.json

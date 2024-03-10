@@ -33,8 +33,8 @@
                   "add": false,
                   "count": {
                     "type": "minecraft:uniform",
-                    "max": 1.0,
-                    "min": 1.0
+                    "max": 3.0,
+                    "min": 2.0
                   },
                   "function": "minecraft:set_count"
                 },
@@ -47,7 +47,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "jaymar_first_mod:metal_detector"
+              "name": "jaymar_first_mod:sapphire"
             }
           ]
         }

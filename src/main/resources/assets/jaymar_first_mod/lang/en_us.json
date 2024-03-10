@@ -17,6 +17,16 @@
   "block.jaymar_first_mod.sapphire_ore": "Sapphire Ore",
   "block.jaymar_first_mod.sound_block": "Sound Block",
 
+  "block.jaymar_first_mod.sapphire_stairs": "Sapphire Stairs",
+  "block.jaymar_first_mod.sapphire_slab": "Sapphire Slab",
+  "block.jaymar_first_mod.sapphire_button": "Sapphire Button",
+  "block.jaymar_first_mod.sapphire_pressure_plate": "Sapphire Pressure Plate",
+  "block.jaymar_first_mod.sapphire_fence": "Sapphire Fence",
+  "block.jaymar_first_mod.sapphire_fence_gate": "Sapphire Fence Gate",
+  "block.jaymar_first_mod.sapphire_wall": "Sapphire Wall",
+  "block.jaymar_first_mod.sapphire_door": "Sapphire Door",
+  "block.jaymar_first_mod.sapphire_trapdoor": "Sapphire Trapdoor",
+
   "creativetab.jaymar_mod_tab": "Jaymar Forge Mod - Testing",
   "creativetab.jaymar_food_tab": "Jaymar Foods",
 
