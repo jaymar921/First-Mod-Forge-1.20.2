@@ -1,6 +1,7 @@
 package net.jaymar.firstmod.blocks;
 
 import net.jaymar.firstmod.JaymarMod;
+import net.jaymar.firstmod.blocks.custom.SoundBlock;
 import net.jaymar.firstmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -34,6 +35,9 @@ public class ModBlocks {
                     BlockBehaviour.Properties.copy(Blocks.STONE).strength(2f).requiresCorrectToolForDrops(),
                     UniformInt.of(3, 7))
             );
+
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.NOTE_BLOCK)));
 
     // Helper method, since our block doesn't have an Item, we'll have to create one for it
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block){

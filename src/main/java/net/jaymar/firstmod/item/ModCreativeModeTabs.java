@@ -34,6 +34,8 @@ public class ModCreativeModeTabs {
 
                         // register custom Items
                         output.accept(ModItems.METAL_DETECTOR.get());
+                        // register custom blocks
+                        output.accept(ModBlocks.SOUND_BLOCK.get());
                     })
                     .build());
     public static void register(IEventBus eventBus){
