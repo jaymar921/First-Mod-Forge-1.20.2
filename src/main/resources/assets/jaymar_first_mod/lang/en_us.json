@@ -3,11 +3,19 @@
   "item.jaymar_first_mod.ruby": "Ruby",
   "item.jaymar_first_mod.bitcoin": "$1 bitcoin",
   "item.jaymar_first_mod.metal_detector": "Metal Detector",
+  "item.jaymar_first_mod.raw_onion": "Raw Onion",
+  "item.jaymar_first_mod.chopped_onion": "Chopped Onion",
+  "item.jaymar_first_mod.cheese": "Cheese",
+  "item.jaymar_first_mod.lettuce": "Lettuce",
+  "item.jaymar_first_mod.raw_beef_patty": "Raw Beef Patty",
+  "item.jaymar_first_mod.cooked_beef_patty": "Cooked Beef Patty",
+  "item.jaymar_first_mod.burger": "Cheese Burger",
 
   "block.jaymar_first_mod.sapphire_block": "Block of Sapphire",
   "block.jaymar_first_mod.mystery_block": "Mystery Block",
   "block.jaymar_first_mod.sapphire_ore": "Sapphire Ore",
   "block.jaymar_first_mod.sound_block": "Sound Block",
 
-  "creativetab.jaymar_mod_tab": "Jaymar Forge Mod - Testing"
+  "creativetab.jaymar_mod_tab": "Jaymar Forge Mod - Testing",
+  "creativetab.jaymar_food_tab": "Jaymar Foods"
 }

@@ -38,6 +38,22 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SOUND_BLOCK.get());
                     })
                     .build());
+
+    public static final RegistryObject<CreativeModeTab> JAYMAR_MOD_FOOD = CREATIVE_MODE_TABS.register("jaymar_food_tabs",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.BURGER.get()))
+                    .title(Component.translatable("creativetab.jaymar_food_tab"))
+                    .displayItems(((itemDisplayParameters, output) -> {
+                        // register foods
+                        output.accept(ModItems.RAW_ONION.get());
+                        output.accept(ModItems.CHOPPED_ONION.get());
+                        output.accept(ModItems.CHEESE.get());
+                        output.accept(ModItems.LETTUCE.get());
+                        output.accept(ModItems.RAW_BEEF_PATTY.get());
+                        output.accept(ModItems.COOKED_BEEF_PATTY.get());
+                        output.accept(ModItems.BURGER.get());
+                    }))
+                    .build());
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TABS.register(eventBus);
     }

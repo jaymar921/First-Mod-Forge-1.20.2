@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jaymar_first_mod:raw_onion"
+    }
+  ],
+  "result": {
+    "item": "jaymar_first_mod:chopped_onion",
+    "count": 2
+  }
+}
