@@ -29,7 +29,11 @@ public class ModCreativeModeTabs {
 
                         // register our block
                         output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                        output.accept(ModBlocks.SAPPHIRE_ORE.get());
                         output.accept(ModBlocks.MYSTERY_BLOCK.get());
+
+                        // register custom Items
+                        output.accept(ModItems.METAL_DETECTOR.get());
                     })
                     .build());
     public static void register(IEventBus eventBus){

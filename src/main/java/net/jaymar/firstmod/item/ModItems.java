@@ -1,6 +1,7 @@
 package net.jaymar.firstmod.item;
 
 import net.jaymar.firstmod.JaymarMod;
+import net.jaymar.firstmod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,6 +20,8 @@ public class ModItems {
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BITCOIN = ITEMS.register("bitcoin", () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties().durability(100)));
 
     // Register the items in the event bus
     public static void register(IEventBus eventBus){
