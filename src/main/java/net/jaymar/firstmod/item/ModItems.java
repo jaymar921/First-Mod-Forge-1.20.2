@@ -1,6 +1,7 @@
 package net.jaymar.firstmod.item;
 
 import net.jaymar.firstmod.JaymarMod;
+import net.jaymar.firstmod.item.custom.FoodItem;
 import net.jaymar.firstmod.item.custom.FuelItem;
 import net.jaymar.firstmod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
@@ -26,19 +27,19 @@ public class ModItems {
 
     // FOODS
     public static final RegistryObject<Item> RAW_ONION = ITEMS.register("raw_onion",
-            () -> new Item(new Item.Properties().food(ModFoods.RAW_ONION)));
+            () -> new FoodItem(new Item.Properties().food(ModFoods.RAW_ONION)));
     public static final RegistryObject<Item> CHOPPED_ONION = ITEMS.register("chopped_onion",
-            () -> new Item(new Item.Properties().food(ModFoods.CHOPPED_ONION)));
+            () -> new FoodItem(new Item.Properties().food(ModFoods.CHOPPED_ONION)));
     public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
-            () -> new Item(new Item.Properties().food(ModFoods.CHEESE)));
+            () -> new FoodItem(new Item.Properties().food(ModFoods.CHEESE)));
     public static final RegistryObject<Item> LETTUCE = ITEMS.register("lettuce",
-            () -> new Item(new Item.Properties().food(ModFoods.LETTUCE)));
+            () -> new FoodItem(new Item.Properties().food(ModFoods.LETTUCE)));
     public static final RegistryObject<Item> RAW_BEEF_PATTY = ITEMS.register("raw_beef_patty",
-            () -> new Item(new Item.Properties().food(ModFoods.RAW_BEEF_PATTY)));
+            () -> new FoodItem(new Item.Properties().food(ModFoods.RAW_BEEF_PATTY)));
     public static final RegistryObject<Item> COOKED_BEEF_PATTY = ITEMS.register("cooked_beef_patty",
-            () -> new Item(new Item.Properties().food(ModFoods.COOKED_BEEF_PATTY)));
+            () -> new FoodItem(new Item.Properties().food(ModFoods.COOKED_BEEF_PATTY)));
     public static final RegistryObject<Item> BURGER = ITEMS.register("burger",
-            () -> new Item(new Item.Properties().food(ModFoods.BURGER)));
+            () -> new FoodItem(new Item.Properties().food(ModFoods.BURGER)));
 
     public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
             () -> new FuelItem(new Item.Properties(), 400));
