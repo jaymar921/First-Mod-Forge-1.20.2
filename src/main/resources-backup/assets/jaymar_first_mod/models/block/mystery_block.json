@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "jaymar_first_mod:block/mystery_block"
+  }
+}

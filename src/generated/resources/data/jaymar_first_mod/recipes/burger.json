@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bread"
+    },
+    "C": {
+      "item": "jaymar_first_mod:cheese"
+    },
+    "L": {
+      "item": "jaymar_first_mod:lettuce"
+    },
+    "P": {
+      "item": "jaymar_first_mod:cooked_beef_patty"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "LPC",
+    "BBB"
+  ],
+  "result": {
+    "item": "jaymar_first_mod:burger"
+  },
+  "show_notification": true
+}

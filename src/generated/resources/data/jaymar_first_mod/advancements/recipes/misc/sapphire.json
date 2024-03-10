@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sapphire_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jaymar_first_mod:sapphire_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jaymar_first_mod:sapphire"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sapphire_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jaymar_first_mod:sapphire"
+    ]
+  },
+  "sends_telemetry_event": false
+}

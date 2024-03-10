@@ -1,0 +1,4 @@
+// 1.20.2	2024-03-10T16:02:34.0464235	Tags for minecraft:block mod id jaymar_first_mod
+1dc67e9dde5b04aa4f18fc5be6fc10589c912ffa data/jaymar_first_mod/tags/blocks/metal_detector_valuables.json
+28e4771e30046e8bee3dcab8801fa6c1251ebec2 data/minecraft/tags/blocks/mineable/pickaxe.json
+2c05e5f68c6a5d75616fc4aa62bd9d8b0d09df5c data/minecraft/tags/blocks/needs_iron_tool.json

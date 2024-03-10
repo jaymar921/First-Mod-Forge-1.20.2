@@ -1,0 +1,74 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bread": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:bread"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_cheese": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jaymar_first_mod:cheese"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_cooked_beef_patty": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jaymar_first_mod:cooked_beef_patty"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_lettuce": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jaymar_first_mod:lettuce"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jaymar_first_mod:burger"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cooked_beef_patty",
+      "has_cheese",
+      "has_lettuce",
+      "has_bread"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jaymar_first_mod:burger"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 400,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "jaymar_first_mod:raw_beef_patty"
+  },
+  "result": "jaymar_first_mod:cooked_beef_patty"
+}

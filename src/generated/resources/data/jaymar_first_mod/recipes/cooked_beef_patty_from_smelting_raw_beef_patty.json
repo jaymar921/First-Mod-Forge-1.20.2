@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 500,
+  "experience": 0.25,
+  "group": "beef_patty",
+  "ingredient": {
+    "item": "jaymar_first_mod:raw_beef_patty"
+  },
+  "result": "jaymar_first_mod:cooked_beef_patty"
+}
