@@ -1,6 +1,7 @@
 package net.jaymar.firstmod.item;
 
 import net.jaymar.firstmod.JaymarMod;
+import net.jaymar.firstmod.item.custom.FuelItem;
 import net.jaymar.firstmod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -38,6 +39,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.COOKED_BEEF_PATTY)));
     public static final RegistryObject<Item> BURGER = ITEMS.register("burger",
             () -> new Item(new Item.Properties().food(ModFoods.BURGER)));
+
+    public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
+            () -> new FuelItem(new Item.Properties(), 400));
 
     // Register the items in the event bus
     public static void register(IEventBus eventBus){
