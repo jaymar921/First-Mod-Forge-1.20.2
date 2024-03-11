@@ -36,6 +36,18 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.SAPPHIRE_BLOCK.get());
 
+        this.tag(ModTags.Blocks.NEEDS_SAPPHIRE_TOOL)
+                .add(
+                        ModBlocks.SOUND_BLOCK.get(),
+                        ModBlocks.SAPPHIRE_BLOCK.get(),
+                        ModBlocks.SAPPHIRE_STAIRS.get(),
+                        ModBlocks.SAPPHIRE_SLAB.get(),
+                        ModBlocks.SAPPHIRE_DOOR.get(),
+                        ModBlocks.SAPPHIRE_TRAPDOOR.get(),
+                        ModBlocks.SAPPHIRE_FENCE.get(),
+                        ModBlocks.SAPPHIRE_BUTTON.get(),
+                        ModBlocks.SAPPHIRE_FENCE_GATE.get());
+
         // FENCE, FENCE GATE AND WALL, this must be added so that they will connect to each other
         this.tag(BlockTags.FENCES)
                 .add(ModBlocks.SAPPHIRE_FENCE.get());

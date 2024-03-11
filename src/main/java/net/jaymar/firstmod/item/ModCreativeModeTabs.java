@@ -26,6 +26,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BITCOIN.get());
                         output.accept(ModItems.PINE_CONE.get());
                         output.accept(ModItems.SAPPHIRE_STAFF.get());
+                        output.accept(ModItems.SAPPHIRE_SWORD.get());
+                        output.accept(ModItems.SAPPHIRE_AXE.get());
+                        output.accept(ModItems.SAPPHIRE_PICKAXE.get());
+                        output.accept(ModItems.SAPPHIRE_SHOVEL.get());
+                        output.accept(ModItems.SAPPHIRE_HOE.get());
                         // adding vanilla items, no need get() method
                         output.accept(Items.CRAFTING_TABLE);
 

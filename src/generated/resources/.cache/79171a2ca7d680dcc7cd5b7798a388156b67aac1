@@ -1,5 +1,6 @@
-// 1.20.2	2024-03-10T20:05:00.6717218	Tags for minecraft:block mod id jaymar_first_mod
+// 1.20.2	2024-03-11T11:46:45.9848123	Tags for minecraft:block mod id jaymar_first_mod
 1dc67e9dde5b04aa4f18fc5be6fc10589c912ffa data/jaymar_first_mod/tags/blocks/metal_detector_valuables.json
+6393e3926e743d112404d2b588963027112f4789 data/jaymar_first_mod/tags/blocks/needs_sapphire_tool.json
 d3722d930ed9bc28330c3144b698b6e363d1524e data/minecraft/tags/blocks/fences.json
 3438a8af14823ad9b609bc0e990c7253dd98353b data/minecraft/tags/blocks/fence_gates.json
 28e4771e30046e8bee3dcab8801fa6c1251ebec2 data/minecraft/tags/blocks/mineable/pickaxe.json
