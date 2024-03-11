@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RUBY.get());
                         output.accept(ModItems.BITCOIN.get());
                         output.accept(ModItems.PINE_CONE.get());
+                        output.accept(ModItems.SAPPHIRE_STAFF.get());
                         // adding vanilla items, no need get() method
                         output.accept(Items.CRAFTING_TABLE);
 
