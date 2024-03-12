@@ -1,6 +1,7 @@
 package net.jaymar.firstmod;
 
 import com.mojang.logging.LogUtils;
+import net.jaymar.eventhandlers.ArmorEventHandler;
 import net.jaymar.firstmod.blocks.ModBlocks;
 import net.jaymar.firstmod.item.ModCreativeModeTabs;
 import net.jaymar.firstmod.item.ModItems;
@@ -43,6 +44,7 @@ public class JaymarMod
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(new ArmorEventHandler());
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

@@ -1,46 +1,38 @@
-package net.jaymar.firstmod.item.custom;
+package net.jaymar.eventhandlers;
 
 import com.google.common.collect.ImmutableMap;
 import net.jaymar.firstmod.item.ModArmorMaterials;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.Level;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 import java.util.Map;
 
-public class ModArmorItem extends ArmorItem {
+/*
+    Alternative to ModArmorItem.onArmorTick() : Not sure if this is efficient
+    To make this work, you must have to register this as a new instance in your Mod Main class
+
+    See in JaymarMod.class
+    Example: MinecraftForge.EVENT_BUS.register(new ArmorEventHandler());
+ */
+public class ArmorEventHandler {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
                     .put(ModArmorMaterials.SAPPHIRE, new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 1, false, false, true)).build();
-    public ModArmorItem(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
-        super(pMaterial, pType, pProperties);
+
+    @SubscribeEvent
+    public void OnArmorTicking(TickEvent.PlayerTickEvent event){
+        Player player = event.player;
+        if(hasFullSuitOfArmorOn(player)){
+            evaluateArmorEffects(player);
+        }
     }
-
-    //[DEPRECATED (Marked for Removal)]
-    //@Override
-    //public void onArmorTick(ItemStack stack, Level world, Player player) {
-    //    if(!world.isClientSide()){
-    //        if(hasFullSuitOfArmorOn(player)){
-    //            evaluateArmorEffects(player);
-    //        }
-    //    }
-    //}
-
-    // Alternative Way
-    //@Override
-    //public void onInventoryTick(ItemStack stack, Level world, Player player, int slotIndex, int selectedIndex) {
-    //    if(!world.isClientSide()){
-    //        if(hasFullSuitOfArmorOn(player)){
-    //            evaluateArmorEffects(player);
-    //        }
-    //    }
-    //}
 
     private boolean hasFullSuitOfArmorOn(Player player){
         ItemStack boots = player.getInventory().getArmor(0);
