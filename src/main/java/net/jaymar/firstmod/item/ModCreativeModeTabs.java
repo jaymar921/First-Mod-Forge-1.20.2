@@ -31,6 +31,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SAPPHIRE_PICKAXE.get());
                         output.accept(ModItems.SAPPHIRE_SHOVEL.get());
                         output.accept(ModItems.SAPPHIRE_HOE.get());
+
+                        // add our custom armor
+                        output.accept(ModItems.SAPPHIRE_HELMET.get());
+                        output.accept(ModItems.SAPPHIRE_CHESTPLATE.get());
+                        output.accept(ModItems.SAPPHIRE_LEGGINGS.get());
+                        output.accept(ModItems.SAPPHIRE_BOOTS.get());
+
                         // adding vanilla items, no need get() method
                         output.accept(Items.CRAFTING_TABLE);
 
