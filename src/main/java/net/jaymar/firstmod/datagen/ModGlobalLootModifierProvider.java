@@ -3,6 +3,7 @@ package net.jaymar.firstmod.datagen;
 import net.jaymar.firstmod.JaymarMod;
 import net.jaymar.firstmod.item.ModItems;
 import net.jaymar.firstmod.loot.AddItemModifier;
+import net.jaymar.firstmod.loot.AddSusSandItemModifier;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
@@ -32,8 +33,18 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
         }, ModItems.PINE_CONE.get()));
 
         // 100% chance of getting a metal detector from jungle temples
-        add("meta_detector_from_jungle_temples", new AddItemModifier(new LootItemCondition[]{
+        add("metal_detector_from_jungle_temples", new AddItemModifier(new LootItemCondition[]{
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/jungle_temple")).build()
         }, ModItems.METAL_DETECTOR.get()));
+
+        // at least 50% chance of adding metal detector from suspicious sand
+        add("metal_detector_from_suspicious_sand", new AddSusSandItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("archaeology/desert_pyramid")).build()
+        }, ModItems.METAL_DETECTOR.get()));
+
+        // at least 20% chance of adding sapphire from suspicious sand
+        add("sapphire_from_suspicious_sand", new AddSusSandItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("archaeology/desert_pyramid")).build()
+        }, ModItems.SAPPHIRE.get(), 0.2f));
     }
 }

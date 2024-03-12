@@ -2,7 +2,9 @@
   "entries": [
     "jaymar_first_mod:pine_cone_from_grass",
     "jaymar_first_mod:pine_cone_from_creeper",
-    "jaymar_first_mod:meta_detector_from_jungle_temples"
+    "jaymar_first_mod:metal_detector_from_suspicious_sand",
+    "jaymar_first_mod:metal_detector_from_jungle_temples",
+    "jaymar_first_mod:sapphire_from_suspicious_sand"
   ],
   "replace": false
 }
