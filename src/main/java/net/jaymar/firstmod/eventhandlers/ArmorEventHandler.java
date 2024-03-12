@@ -1,4 +1,4 @@
-package net.jaymar.eventhandlers;
+package net.jaymar.firstmod.eventhandlers;
 
 import com.google.common.collect.ImmutableMap;
 import net.jaymar.firstmod.item.ModArmorMaterials;
