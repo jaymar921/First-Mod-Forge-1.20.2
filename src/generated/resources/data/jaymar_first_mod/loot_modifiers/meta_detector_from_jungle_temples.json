@@ -1,0 +1,10 @@
+{
+  "type": "jaymar_first_mod:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/jungle_temple"
+    }
+  ],
+  "item": "jaymar_first_mod:metal_detector"
+}

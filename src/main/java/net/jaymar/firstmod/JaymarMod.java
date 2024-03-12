@@ -5,6 +5,7 @@ import net.jaymar.firstmod.eventhandlers.ArmorEventHandler;
 import net.jaymar.firstmod.blocks.ModBlocks;
 import net.jaymar.firstmod.item.ModCreativeModeTabs;
 import net.jaymar.firstmod.item.ModItems;
+import net.jaymar.firstmod.loot.ModLootModifiers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -35,6 +36,8 @@ public class JaymarMod
         ModItems.register(modEventBus);
         // Register our blocks
         ModBlocks.register(modEventBus);
+        // Register our custom global loot modifier
+        ModLootModifiers.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

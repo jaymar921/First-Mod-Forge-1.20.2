@@ -1,0 +1,5 @@
+// 1.20.2	2024-03-12T18:11:15.2473948	Global Loot Modifiers : jaymar_first_mod
+56039f719b4bc2b0763adf91f30acc9eb76f3f92 data/forge/loot_modifiers/global_loot_modifiers.json
+351859aac47bcd0ba170fceea520f2c405bf2848 data/jaymar_first_mod/loot_modifiers/meta_detector_from_jungle_temples.json
+9945494e5359240cd991920ae50abe572cc3f7a8 data/jaymar_first_mod/loot_modifiers/pine_cone_from_creeper.json
+46534e86d9fbac93d3f84dd8bb6119c231c430db data/jaymar_first_mod/loot_modifiers/pine_cone_from_grass.json
