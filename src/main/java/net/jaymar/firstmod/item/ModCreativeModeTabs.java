@@ -77,6 +77,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.COOKED_BEEF_PATTY.get());
                         output.accept(ModItems.BURGER.get());
                         output.accept(ModItems.STRAWBERRY.get());
+                        output.accept(ModItems.STRAWBERRY_SEEDS .get());
                     }))
                     .build());
     public static void register(IEventBus eventBus){

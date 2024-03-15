@@ -1,4 +1,4 @@
-// 1.20.2	2024-03-10T20:19:22.2780498	Loot Tables
+// 1.20.2	2024-03-15T11:02:14.4400124	Loot Tables
 4be5620b2970be32bdc03894fe8a882faa698bb2 data/jaymar_first_mod/loot_tables/blocks/mystery_block.json
 7a97a52f770aff1684ac1f79cc39a3a41ad0eefb data/jaymar_first_mod/loot_tables/blocks/sapphire_block.json
 42660483939d65cd9dde4a4a8fc4cf6feeb59555 data/jaymar_first_mod/loot_tables/blocks/sapphire_button.json
@@ -12,3 +12,4 @@ df10a57f10df48f37048192a85f7cf040b23f4c1 data/jaymar_first_mod/loot_tables/block
 44ad626d4053521e0e2fb8f54a5326d649b9a582 data/jaymar_first_mod/loot_tables/blocks/sapphire_trapdoor.json
 04b4948cce214a43be18ad3df8dc2616d44382b3 data/jaymar_first_mod/loot_tables/blocks/sapphire_wall.json
 baef8253ae530c1b033551de8cd0f89087bf4c95 data/jaymar_first_mod/loot_tables/blocks/sound_block.json
+281154212ed546e16149710a9b48e51f5d746973 data/jaymar_first_mod/loot_tables/blocks/strawberry_crop.json

@@ -2,6 +2,7 @@ package net.jaymar.firstmod.blocks;
 
 import net.jaymar.firstmod.JaymarMod;
 import net.jaymar.firstmod.blocks.custom.SoundBlock;
+import net.jaymar.firstmod.blocks.custom.StrawberryCropBlock;
 import net.jaymar.firstmod.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -57,6 +58,10 @@ public class ModBlocks {
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion(), BlockSetType.IRON));
     public static final RegistryObject<Block>  SAPPHIRE_TRAPDOOR= registerBlock("sapphire_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion(), BlockSetType.IRON));
+
+
+    public static final RegistryObject<Block>  STRAWBERRY_CROP = BLOCKS.register("strawberry_crop",
+            () -> new StrawberryCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).sound(SoundType.AMETHYST).noOcclusion().noCollission()));
 
 
     // Helper method, since our block doesn't have an Item, we'll have to create one for it

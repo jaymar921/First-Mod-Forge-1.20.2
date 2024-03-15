@@ -1,4 +1,4 @@
-// 1.20.2	2024-03-15T10:37:30.296637	Item Models: jaymar_first_mod
+// 1.20.2	2024-03-15T11:02:14.4420095	Item Models: jaymar_first_mod
 9785a80413fdca792b7fe53fce11c5a413054bd5 assets/jaymar_first_mod/models/item/bitcoin.json
 40c04e501c024d20c4fd52630350c45b823468fe assets/jaymar_first_mod/models/item/burger.json
 87131c89ddf131485cc348fd5db6a65644aa63f7 assets/jaymar_first_mod/models/item/cheese.json
@@ -70,3 +70,4 @@ c3d2bb498d74de628733ff45680d69e8539601f3 assets/jaymar_first_mod/models/item/sap
 7fd7ee8c3d5ec5494d9e562287ab1c6c4d2c2b66 assets/jaymar_first_mod/models/item/sapphire_trapdoor.json
 ebc1dcc39b79a89d9db40c173f97eeec4f0084b9 assets/jaymar_first_mod/models/item/sapphire_wall.json
 ed485c9ac23667049e204c5b0cd8a4daaa69f77d assets/jaymar_first_mod/models/item/strawberry.json
+3e42d1d68aa6ff9aef76c4d9bc737c7d533ab677 assets/jaymar_first_mod/models/item/strawberry_seeds.json

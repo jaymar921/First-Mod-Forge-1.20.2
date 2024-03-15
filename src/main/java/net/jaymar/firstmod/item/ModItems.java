@@ -1,6 +1,7 @@
 package net.jaymar.firstmod.item;
 
 import net.jaymar.firstmod.JaymarMod;
+import net.jaymar.firstmod.blocks.ModBlocks;
 import net.jaymar.firstmod.item.custom.FoodItem;
 import net.jaymar.firstmod.item.custom.FuelItem;
 import net.jaymar.firstmod.item.custom.MetalDetectorItem;
@@ -59,6 +60,9 @@ public class ModItems {
     public static final RegistryObject<Item> SAPPHIRE_LEGGINGS = ITEMS.register("sapphire_leggings", () -> new ModArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots", () -> new ModArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new Item.Properties()));
     public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry", () -> new FoodItem(new Item.Properties().food(ModFoods.STRAWBERRY)));
+    public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_CROP.get(),new Item.Properties()));
+
     // Register the items in the event bus
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
