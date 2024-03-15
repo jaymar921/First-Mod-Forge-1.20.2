@@ -58,6 +58,7 @@ public class ModItems {
     public static final RegistryObject<Item> SAPPHIRE_CHESTPLATE = ITEMS.register("sapphire_chestplate", () -> new ModArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     public static final RegistryObject<Item> SAPPHIRE_LEGGINGS = ITEMS.register("sapphire_leggings", () -> new ModArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots", () -> new ModArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry", () -> new FoodItem(new Item.Properties().food(ModFoods.STRAWBERRY)));
     // Register the items in the event bus
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

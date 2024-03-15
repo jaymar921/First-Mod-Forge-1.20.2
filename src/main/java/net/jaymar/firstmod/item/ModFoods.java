@@ -43,4 +43,9 @@ public class ModFoods {
                     .saturationMod(0.6f)
                     .effect(()-> new MobEffectInstance(MobEffects.REGENERATION, 100, 2), 1f)
                     .effect(()-> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100, 1), 1f).build();
+
+    public static final FoodProperties STRAWBERRY =
+            new FoodProperties.Builder().fast()
+                    .nutrition(1)
+                    .saturationMod(0.5f).build();
 }
