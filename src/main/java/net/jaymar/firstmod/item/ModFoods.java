@@ -48,4 +48,8 @@ public class ModFoods {
             new FoodProperties.Builder().fast()
                     .nutrition(1)
                     .saturationMod(0.5f).build();
+    public static final FoodProperties CORN =
+            new FoodProperties.Builder().fast()
+                    .nutrition(1)
+                    .saturationMod(0.5f).build();
 }

@@ -78,6 +78,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BURGER.get());
                         output.accept(ModItems.STRAWBERRY.get());
                         output.accept(ModItems.STRAWBERRY_SEEDS .get());
+                        output.accept(ModItems.CORN .get());
+                        output.accept(ModItems.CORN_SEEDS .get());
                     }))
                     .build());
     public static void register(IEventBus eventBus){

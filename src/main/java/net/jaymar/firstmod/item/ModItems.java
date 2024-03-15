@@ -63,6 +63,11 @@ public class ModItems {
     public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds",
             () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_CROP.get(),new Item.Properties()));
 
+    public static final RegistryObject<Item> CORN = ITEMS.register("corn", () -> new FoodItem(new Item.Properties().food(ModFoods.CORN)));
+
+    public static final RegistryObject<Item> CORN_SEEDS = ITEMS.register("corn_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.CORN_CROP.get(),new Item.Properties()));
+
     // Register the items in the event bus
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

@@ -1,6 +1,7 @@
 package net.jaymar.firstmod.datagen.loot;
 
 import net.jaymar.firstmod.blocks.ModBlocks;
+import net.jaymar.firstmod.blocks.custom.CornCropBlock;
 import net.jaymar.firstmod.blocks.custom.StrawberryCropBlock;
 import net.jaymar.firstmod.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
@@ -61,6 +62,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(StrawberryCropBlock.AGE, 5));
         this.add(ModBlocks.STRAWBERRY_CROP.get(), createCropDrops(ModBlocks.STRAWBERRY_CROP.get(), ModItems.STRAWBERRY.get(),
                 ModItems.STRAWBERRY_SEEDS.get(), lootItemConditionBuilder));
+
+        // Make sure that the corn crop will only drop cron when the age reaches to age 7 or stage 8
+        LootItemCondition.Builder lootItemConditionBuilder2 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.CORN_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(StrawberryCropBlock.AGE, 7))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(ModBlocks.CORN_CROP.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCropBlock.AGE, 8)));
+        this.add(ModBlocks.CORN_CROP.get(), createCropDrops(ModBlocks.CORN_CROP.get(), ModItems.CORN.get(),
+                ModItems.CORN_SEEDS.get(), lootItemConditionBuilder2));
     }
 
     protected LootTable.Builder createCustomDrop(Block pBlock, Item item, UniformGenerator uniformGenerator) {

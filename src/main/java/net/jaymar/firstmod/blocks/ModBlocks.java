@@ -1,6 +1,7 @@
 package net.jaymar.firstmod.blocks;
 
 import net.jaymar.firstmod.JaymarMod;
+import net.jaymar.firstmod.blocks.custom.CornCropBlock;
 import net.jaymar.firstmod.blocks.custom.SoundBlock;
 import net.jaymar.firstmod.blocks.custom.StrawberryCropBlock;
 import net.jaymar.firstmod.item.ModItems;
@@ -61,7 +62,9 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block>  STRAWBERRY_CROP = BLOCKS.register("strawberry_crop",
-            () -> new StrawberryCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).sound(SoundType.AMETHYST).noOcclusion().noCollission()));
+            () -> new StrawberryCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block>  CORN_CROP = BLOCKS.register("corn_crop",
+            () -> new CornCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
 
     // Helper method, since our block doesn't have an Item, we'll have to create one for it
